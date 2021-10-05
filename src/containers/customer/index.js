@@ -105,8 +105,9 @@ const requestSearch = (searchValue) => {
 
 
   return (
+  <div>
+  <h1>List of Customers</h1>
     <div style={{ height: 350, padding: 10 }}>
-
       <div align="right" class="space">
         <StyledButton
           label="Add customer"
@@ -116,7 +117,6 @@ const requestSearch = (searchValue) => {
           color="primary"
         />
       </div>
-
         <StyledTable
           components={{ Toolbar: QuickSearchToolbar }}
           rows={customers}
@@ -131,7 +131,7 @@ const requestSearch = (searchValue) => {
            },
          }}
         />
-
+     </div>
     </div>
   );
 };
