@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "examination",
   "version": "1.0.0",
   "description": "React example starter project",
   "keywords": [
@@ -7,12 +7,14 @@
     "starter"
   ],
   "main": "src/index.js",
-  "proxy": "http://localhost:3000",
   "dependencies": {
     "@babel/runtime": "7.13.8",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "@material-ui/core": "^5.0.0-beta.5",
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/lab": "^5.0.0-alpha.44",
+    "@material-ui/styles": "^4.11.4",
     "axios": "^0.22.0",
     "immutable": "4.0.0-rc.12",
     "keymirror": "0.1.1",

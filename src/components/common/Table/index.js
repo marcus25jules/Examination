@@ -4,6 +4,7 @@ import { DataGrid } from '@material-ui/data-grid';
 
 const StyledTable = ({ rows = [], columns = [], pageSize, rowsPerPageOptions, ...rest }) => {
   return <DataGrid
+       {...rest}
        rows={rows}
        columns={columns}
        pageSize={pageSize}

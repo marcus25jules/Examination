@@ -108,7 +108,9 @@ const customerFormPage = (props) => {
             }}
             fullWidth
             required
-
+            InputLabelProps={{
+              shrink: true,
+            }}
           />
 
         </div>
