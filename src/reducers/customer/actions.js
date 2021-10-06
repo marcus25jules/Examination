@@ -56,18 +56,16 @@ export function getCustomers() {
                 }
               }
             }).catch(err => {
-                //dispatch(pokemonFailure(err));
             });
   };
 
-
 }
+
+
 
 export function addCustomer(form) {
   return (dispatch, getState) => {
     var fields = getState().customer.form.fields;
-
-    console.log(fields);
 
     api.post(fields, CONSTANTS.ADD_CUSTOMER).then((response) => {
 
@@ -77,37 +75,7 @@ export function addCustomer(form) {
         }
       }
     }).catch(err => {
-        //dispatch(pokemonFailure(err));
     });
 
-
-    // if (typeof form.id !== "undefined") {
-    //   var index = fields.data.findIndex(
-    //     (c) => String(c.id) === String(form.id)
-    //   );
-    //   fields.data[index] = form;
-    // } else {
-    //   form.id = fields.lastId;
-    //   fields.data.push(form);
-    //   dispatch(onFormFieldChange("lastId", fields.lastId + 1));
-    // }
-
-
-  };
-}
-
-
-
-export function deleteCustomer(id) {
-  return (dispatch, getState) => {
-    var fields = getState().customer.form.fields;
-
-    if (typeof id !== "undefined") {
-      var index = fields.data.findIndex((c) => String(c.id) === String(id));
-      if (index !== -1) {
-        fields.data.splice(index, 1);
-        dispatch(customerSuccess(fields.data));
-      }
-    }
-  };
+   };
 }
